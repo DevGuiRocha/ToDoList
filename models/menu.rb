@@ -16,7 +16,7 @@ class Menu
   def listagem_menu
     @escolhas.each do |key, value|
       descricao = @descricoes[value] || value.to_s
-      puts "#{key.to_s.center(5, ' ')} -> #{descricao}"
+      puts "#{key.to_s.center(3, ' ')} -> #{descricao}"
     end
   end
 end
