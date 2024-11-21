@@ -1,4 +1,5 @@
 require_relative 'models/menu'
+require 'io/console'
 
 class App
   attr_accessor :continua_executar
@@ -16,6 +17,7 @@ class App
 
   def executa
     while continua_executar
+      STDOUT.clear_screen
       exibe_menu
       continua_executar?
     end
